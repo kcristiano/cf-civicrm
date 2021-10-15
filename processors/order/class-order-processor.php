@@ -401,6 +401,14 @@ class CiviCRM_Caldera_Forms_Order_Processor {
 
 		if ( empty( $metadata ) || ! is_array( $metadata ) ) return $order;
 
+		// Try adding missing params (for 5.41.0+).
+        if ( empty( $metadata['total_amount'] )) {
+            $metadata['total_amount'] = $current_order['total_amount'];
+        }
+        if ( empty( $metadata['financial_type_id'] )) {
+            $metadata['financial_type_id'] = $current_order['financial_type_id'];
+        }
+
 		// need to update contribution with charge metadata (fee, transaction id, etc.)
 		try {
 			$update_order = civicrm_api3( 'Order', 'create', array_merge(
