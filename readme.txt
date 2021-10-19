@@ -2,7 +2,7 @@
 Contributors: mecachisenros, needle
 Tags: civicrm, caldera, forms, integration
 Requires at least: 4.7
-Tested up to: 5.2.4
+Tested up to: 5.7
 Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
