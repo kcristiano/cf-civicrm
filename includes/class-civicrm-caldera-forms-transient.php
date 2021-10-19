@@ -27,7 +27,7 @@ class CiviCRM_Caldera_Forms_Transient {
 
 	/**
 	 * Transient Id.
-	 * 
+	 *
 	 * @since 0.4.4
 	 * @access protected
 	 * @var string $transient_id The transient id
@@ -45,7 +45,7 @@ class CiviCRM_Caldera_Forms_Transient {
 
 	/**
 	 * Cretate unique transient id.
-	 * 
+	 *
 	 * @since 0.4.4
 	 * @access public
 	 * @return string $transient_id The transient id
@@ -53,11 +53,11 @@ class CiviCRM_Caldera_Forms_Transient {
 	protected function set_unique_id() {
 		if ( ! isset( $this->transient_id ) ) $this->transient_id = uniqid( $this->prefix );
 		return $this->transient_id;
-    }
+	}
 
 	/**
 	 * Save transient.
-	 * 
+	 *
 	 * @since 0.4.4
 	 * @access public
 	 * @param string|null|false $transient_id Transient id
@@ -74,7 +74,7 @@ class CiviCRM_Caldera_Forms_Transient {
 
 	/**
 	 * Get transient.
-	 * 
+	 *
 	 * @since 0.4.4
 	 * @access public
 	 * @return object|bool $transient The values or false if none was found
@@ -86,7 +86,7 @@ class CiviCRM_Caldera_Forms_Transient {
 
 	/**
 	 * Delete transient.
-	 * 
+	 *
 	 * @since 0.4.4
 	 * @access public
 	 * @return bool True if deletion was comleted, false otherwise
