@@ -406,11 +406,11 @@ class CiviCRM_Caldera_Forms_Order_Processor {
 		if ( version_compare( $version, '5.41.0', '>=' ) ) {
 
 			// Try adding missing params (for 5.41.0+).
-			if ( empty( $metadata['total_amount'] ) {
-				$metadata['total_amount'] = $current_order['total_amount'],
+			if ( empty( $metadata['total_amount'] )) {
+				$metadata['total_amount'] = $current_order['total_amount'];
 			}
-			if ( empty( $metadata['financial_type_id'] ) {
-				$metadata['financial_type_id'] = $current_order['financial_type_id'],
+			if ( empty( $metadata['financial_type_id'] )) {
+				$metadata['financial_type_id'] = $current_order['financial_type_id'];
 			}
 
 		}
