@@ -4,9 +4,9 @@ A WordPress plugin that integrates the [Caldera Forms](https://wordpress.org/plu
 
 The Caldera Forms CiviCRM plugin contains a set of form processors that interact with CiviCRM's API to retrieve, create and update data in CiviCRM. With this plugin, you can create responsive forms that expose CiviCRM fields and entities like Activities, Relationships, Tags, Groups and more.
 
-**Note**: _this is the development repository for Caldera Forms CiviCRM integration. The plugin can be found in the [WordPress plugin directory](https://wordpress.org/plugins/cf-civicrm/), unless you are developing or testing (`dev` branch) it's encouraged to install it from the WordPress plugin directory._
+**Important**: this plugin is no longer in active development.
 
-This plugin is in active development and is currently being tested with the latest CiviCRM version (5.x).
+**Note**: _this is the development repository for Caldera Forms CiviCRM integration. The plugin can be found in the [WordPress plugin directory](https://wordpress.org/plugins/cf-civicrm/), unless you are developing or testing (`dev` branch) it's encouraged to install it from the WordPress plugin directory._
 
 ### Features
 
@@ -41,6 +41,6 @@ To use this plugin, the following is needed:
 
 ### Contribute
 
-Please help improve this plugin by using the extension issue queue to report any troubles and to make requests for feature improvements. The issue queue is here: https://github.com/mecachisenros/cf-civicrm/issues
+Please help maintain this plugin by using the issue queue to report any troubles and to make requests for feature improvements. The issue queue is here: https://github.com/WPCV/cf-civicrm/issues
 
-Issues submitted to the issue queue will be addressed based on time and interest. If you are a developer contributions are welcome.
+Issues submitted to the issue queue will be addressed based on time and interest. If you are a developer, contributions are welcome.

@@ -10,6 +10,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Integrate CiviCRM entities with Caldera Forms.
 
 
+
 == Description ==
 
 The Caldera Forms CiviCRM plugin contains a set of form processors that interact with CiviCRM's API to retrieve, create and update data in CiviCRM. With this plugin, you can create responsive forms that expose CiviCRM fields and entities like Activities, Relationships, Tags, Groups and more.
@@ -20,7 +21,7 @@ This plugin requires a minimum of *CiviCRM 4.6* although the latest version is r
 
 ### Plugin Development
 
-This plugin is in active development. For feature requests and bug reports (or if you're a plugin author and want to contribute) please visit the plugin's [GitHub repository](https://github.com/mecachisenros/cf-civicrm).
+Note: this plugin is no longer in active development. For urgent bug reports (or if you're a plugin author and want to contribute a fix) please visit the plugin's [GitHub repository](https://github.com/WPCV/cf-civicrm).
 
 
 
@@ -33,6 +34,9 @@ This plugin is in active development. For feature requests and bug reports (or i
 
 
 == Changelog ==
+
+= 1.1.0 =
+Fix for failed Orders in CiviCRM 5.41.0+
 
 = 1.0.5 =
 * Refactored CiviDiscount integration to also support Membership discounts, and Contribution Page based (contribution) discount using this branch (pending, submit PR upstream) https://github.com/mecachisenros/org.civicrm.module.cividiscount/tree/contribution-page-discounts
