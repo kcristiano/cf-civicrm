@@ -1,290 +1,1395 @@
-# Copyright (C) 2016 Caldera Forms CiviCRM
-# This file is distributed under the same license as the Caldera Forms CiviCRM package.
+# Copyright (C) 2021 CF CiviCRM
+# This file is distributed under the same license as the CF CiviCRM package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Caldera Forms CiviCRM 0.2\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/cf-civicrm\n"
-"POT-Creation-Date: 2016-09-15 17:36:02+00:00\n"
+"Project-Id-Version: CF CiviCRM 1.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/caldera-forms-"
+"civicrm\n"
+"POT-Creation-Date: 2021-10-19 16:06:35+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2021-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
-#: fields/civicrm_country/config.php:2 fields/civicrm_state/config.php:2
-msgid "Placeholder"
+#: cf-civicrm.php:300
+msgid "Caldera Forms CiviCRM requires Caldera Forms v1.8.1 or higher."
 msgstr ""
 
-#: fields/civicrm_country/config.php:8 fields/civicrm_state/config.php:8
-msgid "Default"
+#: fields/civicrm_contact_reference/class-civicrm-contact-reference.php:68
+msgid "CiviCRM Contact Reference"
 msgstr ""
 
-#: includes/class-civicrm-caldera-forms-helper.php:72
-#: processors/relationship_config.php:24 processors/relationship_config.php:42
-msgid "Contact 1"
-msgstr ""
-
-#: includes/class-civicrm-caldera-forms-helper.php:73
-#: processors/relationship_config.php:25 processors/relationship_config.php:43
-msgid "Contact 2"
-msgstr ""
-
-#: includes/class-civicrm-caldera-forms-helper.php:74
-#: processors/relationship_config.php:26 processors/relationship_config.php:44
-msgid "Contact 3"
-msgstr ""
-
-#: includes/class-civicrm-caldera-forms-helper.php:75
-#: processors/relationship_config.php:27 processors/relationship_config.php:45
-msgid "Contact 4"
-msgstr ""
-
-#: includes/class-civicrm-caldera-forms-helper.php:76
-#: processors/relationship_config.php:28 processors/relationship_config.php:46
-msgid "Contact 5"
-msgstr ""
-
-#: includes/class-civicrm-caldera-forms-helper.php:77
-#: processors/relationship_config.php:29 processors/relationship_config.php:47
-msgid "Contact 6"
-msgstr ""
-
-#: includes/class-civicrm-caldera-forms-helper.php:78
-#: processors/relationship_config.php:30 processors/relationship_config.php:48
-msgid "Contact 7"
-msgstr ""
-
-#: includes/class-civicrm-caldera-forms-helper.php:79
-#: processors/relationship_config.php:31 processors/relationship_config.php:49
-msgid "Contact 8"
-msgstr ""
-
-#: includes/class-civicrm-caldera-forms-helper.php:80
-#: processors/relationship_config.php:32 processors/relationship_config.php:50
-msgid "Contact 9"
-msgstr ""
-
-#: includes/class-civicrm-caldera-forms-helper.php:81
-#: processors/relationship_config.php:33 processors/relationship_config.php:51
-msgid "Contact 10"
-msgstr ""
-
-#: includes/functions.php:22
-msgid "CiviCRM Contact"
-msgstr ""
-
-#: includes/functions.php:23
-msgid "Create CiviCRM contact"
-msgstr ""
-
-#: includes/functions.php:31
-msgid "CiviCRM Group"
-msgstr ""
-
-#: includes/functions.php:32
-msgid "Add CiviCRM contact to group"
-msgstr ""
-
-#: includes/functions.php:40
-msgid "CiviCRM Activity"
-msgstr ""
-
-#: includes/functions.php:41
-msgid "Add CiviCRM activity to contact"
-msgstr ""
-
-#: includes/functions.php:49
-msgid "CiviCRM Relationship"
-msgstr ""
-
-#: includes/functions.php:50
-msgid "Add CiviCRM relationship to contacts"
-msgstr ""
-
-#: includes/functions.php:58
-msgid "CiviCRM Tag"
-msgstr ""
-
-#: includes/functions.php:59
-msgid "Add CiviCRM tags to contacts"
-msgstr ""
-
-#: includes/functions.php:67
-msgid "CiviCRM Address"
-msgstr ""
-
-#: includes/functions.php:68
-msgid "Add CiviCRM address to contacts"
-msgstr ""
-
-#: includes/functions.php:76
-msgid "CiviCRM Email"
-msgstr ""
-
-#: includes/functions.php:77
-msgid "Add CiviCRM email to contacts"
-msgstr ""
-
-#: includes/functions.php:85
-msgid "CiviCRM Phone"
-msgstr ""
-
-#: includes/functions.php:86
-msgid "Add CiviCRM phone to contacts"
-msgstr ""
-
-#: includes/functions.php:94
-msgid "CiviCRM Note"
-msgstr ""
-
-#: includes/functions.php:95
-msgid "Add CiviCRM note to contacts"
-msgstr ""
-
-#: includes/functions.php:1163
-msgid "CiviCRM - %s - %s"
-msgstr ""
-
-#: includes/functions.php:1192
-msgid "CiviCRM Country"
-msgstr ""
-
-#: includes/functions.php:1194 includes/functions.php:1212
+#: fields/civicrm_contact_reference/class-civicrm-contact-reference.php:70
+#: fields/civicrm_country/class-civicrm-country.php:71
+#: fields/civicrm_county/class-civicrm-county.php:71
+#: fields/civicrm_premium/class-civicrm-premium.php:68
+#: fields/civicrm_state/class-civicrm-state.php:71
+#: fields/discount/class-civicrm-discount.php:65
+#: includes/class-civicrm-caldera-forms-forms.php:250
 msgid "CiviCRM"
 msgstr ""
 
-#: includes/functions.php:1195
-msgid "CiviCRM Country dropdown"
+#: fields/civicrm_contact_reference/class-civicrm-contact-reference.php:71
+msgid "CiviCRM Contact Reference field"
 msgstr ""
 
-#: includes/functions.php:1200
-msgid "Select a Country"
+#: fields/civicrm_contact_reference/class-civicrm-contact-reference.php:76
+msgid "Search Contacts"
 msgstr ""
 
-#: includes/functions.php:1210
-msgid "CiviCRM State/Province"
+#: fields/civicrm_contact_reference/config.php:21
+#: fields/civicrm_country/config.php:3 fields/civicrm_county/config.php:3
+#: fields/civicrm_state/config.php:3 fields/discount/config.php:2
+msgid "Placeholder"
 msgstr ""
 
-#: includes/functions.php:1213
-msgid "CiviCRM State/Province dropdown"
-msgstr ""
-
-#: includes/functions.php:1218
-msgid "Select a State/Province"
-msgstr ""
-
-#: processors/activity_config.php:30 processors/address_config.php:16
-#: processors/contact_config.php:29 processors/email_config.php:14
-#: processors/entity_tag_config.php:9 processors/group_config.php:12
-#: processors/note_config.php:11 processors/phone_config.php:16
-msgid "Contact Link"
-msgstr ""
-
-#: processors/activity_config.php:32 processors/address_config.php:18
-#: processors/contact_config.php:31 processors/email_config.php:16
-#: processors/entity_tag_config.php:11 processors/group_config.php:14
-#: processors/note_config.php:13 processors/phone_config.php:18
-msgid "Link to"
-msgstr ""
-
-#: processors/activity_config.php:35 processors/address_config.php:21
-#: processors/contact_config.php:34 processors/email_config.php:19
-#: processors/entity_tag_config.php:14 processors/group_config.php:17
-#: processors/note_config.php:16 processors/phone_config.php:21
-msgid "Select which contact you want to link this processor to."
-msgstr ""
-
-#: processors/activity_config.php:42
-msgid "Activity"
-msgstr ""
-
-#: processors/activity_config.php:44
-msgid "Activity Type"
-msgstr ""
-
-#: processors/activity_config.php:56
-msgid "Activity Status"
-msgstr ""
-
-#: processors/activity_config.php:68
-msgid "Campaign"
-msgstr ""
-
-#: processors/activity_config.php:81
-msgid "Activity fields"
-msgstr ""
-
-#: processors/activity_config.php:89
-msgid "Default is set to the Contact that submits the form."
-msgstr ""
-
-#: processors/address_config.php:27 processors/address_config.php:29
-#: processors/email_config.php:26
-msgid "Address Location Type"
-msgstr ""
-
-#: processors/address_config.php:42
-msgid "Address Fields"
-msgstr ""
-
-#: processors/contact_config.php:22
-msgid "Auto populate contact data with CiviCRM data if user is logged in. (Only for the first contact processor)"
-msgstr ""
-
-#: processors/contact_config.php:40 processors/contact_config.php:42
+#: fields/civicrm_contact_reference/config.php:31
+#: processors/contact/contact_config.php:86
+#: processors/contact/contact_config.php:88
 msgid "Contact Type"
 msgstr ""
 
-#: processors/contact_config.php:55
-msgid "Contact Sub-Type"
+#: fields/civicrm_contact_reference/config.php:41
+msgid "Limit by Contacts Type."
 msgstr ""
 
-#: processors/contact_config.php:68
-msgid "Dedupe Rule"
+#: fields/civicrm_contact_reference/config.php:50
+msgid "Contact Subtype"
 msgstr ""
 
-#: processors/contact_config.php:83
-msgid "Standard Fields"
+#: fields/civicrm_contact_reference/config.php:60
+msgid "Limit by Contact Subtype."
 msgstr ""
 
-#: processors/contact_config.php:121
-msgid "Custom Fields"
-msgstr ""
-
-#: processors/entity_tag_config.php:20
-msgid "Tag(s)"
-msgstr ""
-
-#: processors/group_config.php:24
+#: fields/civicrm_contact_reference/config.php:69
+#: processors/contact/contact_config.php:491
+#: processors/group/group_config.php:24
 msgid "Group"
 msgstr ""
 
-#: processors/note_config.php:22
-msgid "Note Fields"
+#: fields/civicrm_contact_reference/config.php:75
+msgid "Limit to contacts in group."
 msgstr ""
 
-#: processors/phone_config.php:27 processors/phone_config.php:29
+#: fields/civicrm_contact_reference/config.php:82
+msgid "New organization"
+msgstr ""
+
+#: fields/civicrm_contact_reference/config.php:87
+msgid "Enable to allow user to enter a new value (Oraganization)."
+msgstr ""
+
+#: fields/civicrm_country/class-civicrm-country.php:69
+msgid "CiviCRM Country"
+msgstr ""
+
+#: fields/civicrm_country/class-civicrm-country.php:72
+msgid "CiviCRM Country dropdown"
+msgstr ""
+
+#: fields/civicrm_country/class-civicrm-country.php:77
+#: form-templates/civicrm-contact-address.php:217
+#: form-templates/civicrm-organisation-basic.php:170
+#: form-templates/civicrm-organisation-contact.php:194
+msgid "Select a Country"
+msgstr ""
+
+#: fields/civicrm_country/config.php:9 fields/civicrm_county/config.php:9
+#: fields/civicrm_state/config.php:9
+msgid "Default"
+msgstr ""
+
+#: fields/civicrm_county/class-civicrm-county.php:69
+#: fields/civicrm_county/class-civicrm-county.php:72
+msgid "CiviCRM County"
+msgstr ""
+
+#: fields/civicrm_county/class-civicrm-county.php:77
+msgid "Select a County"
+msgstr ""
+
+#: fields/civicrm_county/config.php:20
+msgid "CiviCRM State/Province field"
+msgstr ""
+
+#: fields/civicrm_file/advanced_file_config.php:6
+#: fields/civicrm_file/file_config.php:6
+msgid "CiviCRM File Upload"
+msgstr ""
+
+#: fields/civicrm_file/class-civicrm-file.php:110
+msgid "There was a problem with your upload."
+msgstr ""
+
+#: fields/civicrm_premium/class-civicrm-premium.php:66
+msgid "CiviCRM Premium"
+msgstr ""
+
+#: fields/civicrm_premium/class-civicrm-premium.php:69
+msgid "CiviCRM Premiums for Order processors"
+msgstr ""
+
+#: fields/civicrm_premium/class-civicrm-premium.php:128
+msgid "Minimum: %s"
+msgstr ""
+
+#: fields/civicrm_premium/config.php:4
+msgid "Toggle active class"
+msgstr ""
+
+#: fields/civicrm_premium/config.php:10
+msgid "The selected class of the toggle button."
+msgstr ""
+
+#: fields/civicrm_premium/config.php:17
+msgid "Toggle inactive class"
+msgstr ""
+
+#: fields/civicrm_premium/config.php:23
+msgid "The default class of the toggle button, ie. not clicked/selected."
+msgstr ""
+
+#: fields/civicrm_premium/config.php:30 processors/order/order_config.php:208
+msgid "Premium"
+msgstr ""
+
+#: fields/civicrm_premium/config.php:37 fields/civicrm_premium/config.php:54
+msgid "Select a premium (this field is required)."
+msgstr ""
+
+#: fields/civicrm_premium/config.php:44
+msgid "Default option"
+msgstr ""
+
+#: fields/civicrm_premium/config.php:61
+msgid "No thank you label"
+msgstr ""
+
+#: fields/civicrm_premium/config.php:70
+msgid "Don't show 'No thank you'"
+msgstr ""
+
+#: fields/civicrm_premium/config.php:80
+msgid "Calculation field"
+msgstr ""
+
+#: fields/civicrm_premium/config.php:86
+msgid "Calculation field to check for minimum contribution."
+msgstr ""
+
+#: fields/civicrm_state/class-civicrm-state.php:69
+msgid "CiviCRM State/Province"
+msgstr ""
+
+#: fields/civicrm_state/class-civicrm-state.php:72
+msgid "CiviCRM State/Province dropdown"
+msgstr ""
+
+#: fields/civicrm_state/class-civicrm-state.php:77
+#: form-templates/civicrm-contact-address.php:199
+#: form-templates/civicrm-organisation-basic.php:151
+#: form-templates/civicrm-organisation-contact.php:175
+msgid "Select a State/Province"
+msgstr ""
+
+#: fields/civicrm_state/config.php:20
+msgid "CiviCRM Country field"
+msgstr ""
+
+#: fields/discount/class-civicrm-discount.php:63
+msgid "CiviCRM Discount"
+msgstr ""
+
+#: fields/discount/class-civicrm-discount.php:66
+msgid "CiviCRM Discount field (CiviDiscount integration)"
+msgstr ""
+
+#: fields/discount/class-civicrm-discount.php:71
+msgid "Discount Code"
+msgstr ""
+
+#: fields/discount/class-civicrm-discount.php:72 fields/discount/field.php:12
+msgid "Apply Discount"
+msgstr ""
+
+#: fields/discount/config.php:8
+msgid "Button text"
+msgstr ""
+
+#: fields/discount/field.php:73
+msgid "Discount applied successfully."
+msgstr ""
+
+#: fields/discount/field.php:83
+msgid "The code supplied is not valid."
+msgstr ""
+
+#: fields/hidden/config.php:5
+msgid "Pre render CiviCRM data for this field"
+msgstr ""
+
+#: fields/hidden/config.php:9
+msgid ""
+"CiviCRM data mapped to hidden fields is ignored by default, check this "
+"option to enable auto population of CiviCRM data."
+msgstr ""
+
+#: fields/presets/class-civicrm-core-fields-presets.php:93
+msgid "CiviCRM Payment Methods"
+msgstr ""
+
+#: fields/presets/class-civicrm-core-fields-presets.php:120
+msgid "CiviCRM Relationship Types"
+msgstr ""
+
+#: fields/presets/class-civicrm-core-fields-presets.php:137
+msgid "CiviCRM - Individual Prefix"
+msgstr ""
+
+#: fields/presets/class-civicrm-core-fields-presets.php:139
+msgid "CiviCRM - Individual Suffix"
+msgstr ""
+
+#: fields/presets/class-civicrm-core-fields-presets.php:141
+msgid "CiviCRM - Individual Gender"
+msgstr ""
+
+#: fields/presets/class-civicrm-core-fields-presets.php:143
+msgid "CiviCRM - Communication Style"
+msgstr ""
+
+#: fields/presets/class-civicrm-core-fields-presets.php:145
+msgid "CiviCRM - Do Not Email"
+msgstr ""
+
+#: fields/presets/class-civicrm-core-fields-presets.php:147
+msgid "CiviCRM - Do Not Phone"
+msgstr ""
+
+#: fields/presets/class-civicrm-core-fields-presets.php:149
+msgid "CiviCRM - Do Not Mail"
+msgstr ""
+
+#: fields/presets/class-civicrm-core-fields-presets.php:151
+msgid "CiviCRM - Do Not SMS"
+msgstr ""
+
+#: fields/presets/class-civicrm-core-fields-presets.php:153
+msgid "CiviCRM - Do Not Trade"
+msgstr ""
+
+#: fields/presets/class-civicrm-core-fields-presets.php:155
+msgid "CiviCRM - No Bulk Emails (User Opt Out)"
+msgstr ""
+
+#: fields/presets/class-civicrm-core-fields-presets.php:157
+msgid "CiviCRM - Country"
+msgstr ""
+
+#: fields/presets/class-civicrm-core-fields-presets.php:159
+msgid "CiviCRM - State/Province"
+msgstr ""
+
+#: fields/presets/class-civicrm-core-fields-presets.php:161
+msgid "CiviCRM - Address Location Type"
+msgstr ""
+
+#: fields/presets/class-civicrm-core-fields-presets.php:163
+msgid "CiviCRM - Email Location Type"
+msgstr ""
+
+#: fields/presets/class-civicrm-core-fields-presets.php:165
+msgid "CiviCRM - Phone Location Type"
+msgstr ""
+
+#: fields/presets/class-civicrm-core-fields-presets.php:167
+msgid "CiviCRM - Phone Type"
+msgstr ""
+
+#: fields/presets/class-civicrm-core-fields-presets.php:169
+msgid "CiviCRM - Website Type"
+msgstr ""
+
+#: fields/presets/class-civicrm-core-fields-presets.php:171
+msgid "CiviCRM - Im Type"
+msgstr ""
+
+#: fields/presets/class-civicrm-core-fields-presets.php:173
+msgid "CiviCRM - Preferred Language"
+msgstr ""
+
+#: fields/presets/class-civicrm-core-fields-presets.php:175
+msgid "CiviCRM - Relationship Type"
+msgstr ""
+
+#: fields/presets/class-civicrm-core-fields-presets.php:488
+msgid "%1$s [%2$s] / %3$s [%4$s]"
+msgstr ""
+
+#: fields/presets/class-civicrm-custom-fields-presets.php:104
+msgid "CiviCRM - %1$s - %2$s"
+msgstr ""
+
+#: fields/presets/class-civicrm-custom-fields-presets.php:152
+msgid "CiviCRM Custom Data Set - %1$s"
+msgstr ""
+
+#: fields/presets/class-civicrm-custom-fields-presets.php:160
+msgid "%1$s"
+msgstr ""
+
+#: fields/presets/class-civicrm-price-sets-presets.php:88
+msgid "CiviCRM Price Set: %1$s - Price Field: %2$s"
+msgstr ""
+
+#: form-templates/civicrm-contact-address.php:9
+#: includes/class-civicrm-caldera-forms-templates.php:52
+msgid "CiviCRM Contact and Address"
+msgstr ""
+
+#: form-templates/civicrm-contact-address.php:10
+msgid "CiviCRM contact form with address."
+msgstr ""
+
+#: form-templates/civicrm-contact-address.php:15
+#: form-templates/civicrm-contact-basic.php:15
+#: form-templates/civicrm-organisation-basic.php:15
+#: form-templates/civicrm-organisation-contact.php:15
+msgid "Form has been successfully submitted. Thank you."
+msgstr ""
+
+#: form-templates/civicrm-contact-address.php:42
+#: form-templates/civicrm-contact-basic.php:37
+#: form-templates/civicrm-organisation-contact.php:223
+msgid "Prefix"
+msgstr ""
+
+#: form-templates/civicrm-contact-address.php:68
+#: form-templates/civicrm-contact-basic.php:63
+#: form-templates/civicrm-organisation-contact.php:249
+msgid "First Name"
+msgstr ""
+
+#: form-templates/civicrm-contact-address.php:89
+#: form-templates/civicrm-contact-basic.php:84
+#: form-templates/civicrm-organisation-contact.php:269
+msgid "Last Name"
+msgstr ""
+
+#: form-templates/civicrm-contact-address.php:110
+#: form-templates/civicrm-contact-basic.php:105
+msgid "Email"
+msgstr ""
+
+#: form-templates/civicrm-contact-address.php:129
+#: form-templates/civicrm-organisation-basic.php:80
+#: form-templates/civicrm-organisation-contact.php:104
+msgid "Street Address"
+msgstr ""
+
+#: form-templates/civicrm-contact-address.php:149
+#: form-templates/civicrm-organisation-basic.php:100
+#: form-templates/civicrm-organisation-contact.php:124
+msgid "Supplemental Address"
+msgstr ""
+
+#: form-templates/civicrm-contact-address.php:169
+#: form-templates/civicrm-organisation-basic.php:120
+#: form-templates/civicrm-organisation-contact.php:144
+msgid "City"
+msgstr ""
+
+#: form-templates/civicrm-contact-address.php:189
+#: form-templates/civicrm-organisation-basic.php:141
+#: form-templates/civicrm-organisation-contact.php:165
+msgid "State"
+msgstr ""
+
+#: form-templates/civicrm-contact-address.php:207
+#: form-templates/civicrm-organisation-basic.php:159
+#: form-templates/civicrm-organisation-contact.php:183
+msgid "Country"
+msgstr ""
+
+#: form-templates/civicrm-contact-address.php:225
+#: form-templates/civicrm-contact-basic.php:124
+#: form-templates/civicrm-organisation-basic.php:178
+#: form-templates/civicrm-organisation-contact.php:307
+msgid "Submit"
+msgstr ""
+
+#: form-templates/civicrm-contact-address.php:248
+#: form-templates/civicrm-contact-basic.php:147
+#: form-templates/civicrm-organisation-basic.php:201
+#: form-templates/civicrm-organisation-contact.php:330
+msgid "CiviCRM Caldera Forms"
+msgstr ""
+
+#: form-templates/civicrm-contact-address.php:254
+#: form-templates/civicrm-contact-basic.php:153
+#: form-templates/civicrm-organisation-basic.php:207
+#: form-templates/civicrm-organisation-contact.php:336
+msgid "CiviCRM Caldera Forms Submission"
+msgstr ""
+
+#: form-templates/civicrm-contact-basic.php:9
+#: includes/class-civicrm-caldera-forms-templates.php:46
+msgid "CiviCRM Contact Form"
+msgstr ""
+
+#: form-templates/civicrm-contact-basic.php:10
+msgid "Basic CiviCRM contact form."
+msgstr ""
+
+#: form-templates/civicrm-organisation-basic.php:9
+#: includes/class-civicrm-caldera-forms-templates.php:58
+msgid "CiviCRM Organisation"
+msgstr ""
+
+#: form-templates/civicrm-organisation-basic.php:10
+msgid "Basic CiviCRM organisation form."
+msgstr ""
+
+#: form-templates/civicrm-organisation-basic.php:40
+#: form-templates/civicrm-organisation-contact.php:65
+msgid "Organisation Name"
+msgstr ""
+
+#: form-templates/civicrm-organisation-basic.php:61
+#: form-templates/civicrm-organisation-contact.php:289
+#: processors/contact/contact_config.php:351
+msgid "Contact Email"
+msgstr ""
+
+#: form-templates/civicrm-organisation-contact.php:9
+#: includes/class-civicrm-caldera-forms-templates.php:64
+msgid "CiviCRM Organisation and Contact"
+msgstr ""
+
+#: form-templates/civicrm-organisation-contact.php:10
+msgid "CiviCRM organisation form with primary contact."
+msgstr ""
+
+#: form-templates/civicrm-organisation-contact.php:46
+#: form-templates/civicrm-organisation-contact.php:56
+msgid "About Your Organisation"
+msgstr ""
+
+#: form-templates/civicrm-organisation-contact.php:58
+msgid "We need to know a few things about your organisation."
+msgstr ""
+
+#: form-templates/civicrm-organisation-contact.php:86
+msgid "Organisation Email"
+msgstr ""
+
+#: form-templates/civicrm-organisation-contact.php:202
+#: form-templates/civicrm-organisation-contact.php:214
+msgid "Organisation Contact"
+msgstr ""
+
+#: form-templates/civicrm-organisation-contact.php:216
+msgid "Who is the primary contact at your organisation?"
+msgstr ""
+
+#: includes/class-civicrm-caldera-forms-ajax.php:163
+msgid ""
+"Price Sets have been rebuilt, please refresh the page to see the changes."
+msgstr ""
+
+#: includes/class-civicrm-caldera-forms-cividiscount.php:283
+msgid "%1$s (Includes automatic discount of: "
+msgstr ""
+
+#: includes/class-civicrm-caldera-forms-cividiscount.php:288
+msgid "%)"
+msgstr ""
+
+#: includes/class-civicrm-caldera-forms-cividiscount.php:293
+msgid ")"
+msgstr ""
+
+#: includes/class-civicrm-caldera-forms-forms.php:251
+msgid "Caldera Forms CiviCRM"
+msgstr ""
+
+#: includes/class-civicrm-caldera-forms-helper.php:103
+#: processors/relationship/relationship_config.php:41
+#: processors/relationship/relationship_config.php:59
+msgid "Contact 1"
+msgstr ""
+
+#: includes/class-civicrm-caldera-forms-helper.php:104
+#: processors/relationship/relationship_config.php:42
+#: processors/relationship/relationship_config.php:60
+msgid "Contact 2"
+msgstr ""
+
+#: includes/class-civicrm-caldera-forms-helper.php:105
+#: processors/relationship/relationship_config.php:43
+#: processors/relationship/relationship_config.php:61
+msgid "Contact 3"
+msgstr ""
+
+#: includes/class-civicrm-caldera-forms-helper.php:106
+#: processors/relationship/relationship_config.php:44
+#: processors/relationship/relationship_config.php:62
+msgid "Contact 4"
+msgstr ""
+
+#: includes/class-civicrm-caldera-forms-helper.php:107
+#: processors/relationship/relationship_config.php:45
+#: processors/relationship/relationship_config.php:63
+msgid "Contact 5"
+msgstr ""
+
+#: includes/class-civicrm-caldera-forms-helper.php:108
+#: processors/relationship/relationship_config.php:46
+#: processors/relationship/relationship_config.php:64
+msgid "Contact 6"
+msgstr ""
+
+#: includes/class-civicrm-caldera-forms-helper.php:109
+#: processors/relationship/relationship_config.php:47
+#: processors/relationship/relationship_config.php:65
+msgid "Contact 7"
+msgstr ""
+
+#: includes/class-civicrm-caldera-forms-helper.php:110
+#: processors/relationship/relationship_config.php:48
+#: processors/relationship/relationship_config.php:66
+msgid "Contact 8"
+msgstr ""
+
+#: includes/class-civicrm-caldera-forms-helper.php:111
+#: processors/relationship/relationship_config.php:49
+#: processors/relationship/relationship_config.php:67
+msgid "Contact 9"
+msgstr ""
+
+#: includes/class-civicrm-caldera-forms-helper.php:112
+#: processors/relationship/relationship_config.php:50
+#: processors/relationship/relationship_config.php:68
+msgid "Contact 10"
+msgstr ""
+
+#: processors/activity/activity_config.php:34
+#: processors/address/address_config.php:23 processors/case/case_config.php:37
+#: processors/contact/contact_config.php:75
+#: processors/contribution/contribution_config.php:22
+#: processors/email/email_config.php:14
+#: processors/entity-tag/entity_tag_config.php:11
+#: processors/group/group_config.php:12 processors/im/im_config.php:14
+#: processors/membership/membership_config.php:64
+#: processors/note/note_config.php:11 processors/order/order_config.php:95
+#: processors/participant/config.php:66 processors/phone/phone_config.php:21
+#: processors/send-email/send_email_config.php:13
+#: processors/website/website_config.php:14
+msgid "Contact Link"
+msgstr ""
+
+#: processors/activity/activity_config.php:36
+#: processors/address/address_config.php:25 processors/case/case_config.php:39
+#: processors/contact/contact_config.php:77
+#: processors/contribution/contribution_config.php:24
+#: processors/email/email_config.php:16
+#: processors/entity-tag/entity_tag_config.php:13
+#: processors/group/group_config.php:14 processors/im/im_config.php:16
+#: processors/membership/membership_config.php:66
+#: processors/note/note_config.php:13 processors/order/order_config.php:97
+#: processors/participant/config.php:68 processors/phone/phone_config.php:23
+#: processors/send-email/send_email_config.php:15
+#: processors/website/website_config.php:16
+msgid "Link to"
+msgstr ""
+
+#: processors/activity/activity_config.php:39
+#: processors/address/address_config.php:28 processors/case/case_config.php:42
+#: processors/contact/contact_config.php:80
+#: processors/contribution/contribution_config.php:27
+#: processors/email/email_config.php:19
+#: processors/entity-tag/entity_tag_config.php:16
+#: processors/group/group_config.php:17 processors/im/im_config.php:19
+#: processors/membership/membership_config.php:69
+#: processors/note/note_config.php:16 processors/order/order_config.php:100
+#: processors/participant/config.php:71 processors/phone/phone_config.php:26
+#: processors/send-email/send_email_config.php:18
+#: processors/website/website_config.php:19
+msgid "Select which contact you want to link this processor to."
+msgstr ""
+
+#: processors/activity/activity_config.php:46
+msgid "Activity"
+msgstr ""
+
+#: processors/activity/activity_config.php:48
+msgid "Activity Type"
+msgstr ""
+
+#: processors/activity/activity_config.php:60
+msgid "Activity Status"
+msgstr ""
+
+#: processors/activity/activity_config.php:72
+#: processors/membership/membership_config.php:97
+#: processors/order/order_config.php:121 processors/participant/config.php:118
+msgid "Campaign"
+msgstr ""
+
+#: processors/activity/activity_config.php:85
+msgid "Activity fields"
+msgstr ""
+
+#: processors/activity/activity_config.php:102
+msgid "Target Contact ID"
+msgstr ""
+
+#: processors/activity/activity_config.php:110
+msgid "Source Contact ID"
+msgstr ""
+
+#: processors/activity/activity_config.php:118
+msgid "Assignee Contact ID"
+msgstr ""
+
+#: processors/activity/class-activity-processor.php:62
+msgid "CiviCRM Activity"
+msgstr ""
+
+#: processors/activity/class-activity-processor.php:63
+msgid "Add CiviCRM activity to contact"
+msgstr ""
+
+#: processors/activity/class-activity-processor.php:110
+msgid "Activity not created due to invalid case_id."
+msgstr ""
+
+#: processors/address/address_config.php:18
+#: processors/contact/contact_config.php:201
+msgid "Write empty/blank fields values."
+msgstr ""
+
+#: processors/address/address_config.php:19
+#: processors/contact/contact_config.php:202
+msgid ""
+"If a mapped field's value is empty/blank it will still be sent to CiviCRM "
+"when this setting is enabled."
+msgstr ""
+
+#: processors/address/address_config.php:34
+#: processors/address/address_config.php:36
+#: processors/contact/contact_config.php:206
+#: processors/contact/contact_config.php:208
+#: processors/email/email_config.php:26
+msgid "Address Location Type"
+msgstr ""
+
+#: processors/address/address_config.php:49
+#: processors/contact/contact_config.php:221
+msgid "Address Fields"
+msgstr ""
+
+#: processors/address/address_config.php:62 processors/case/case_config.php:106
+#: processors/contact/contact_config.php:166
+#: processors/order/order_config.php:263 processors/participant/config.php:148
+msgid "Custom Fields"
+msgstr ""
+
+#: processors/address/class-address-processor.php:65
+msgid "CiviCRM Address"
+msgstr ""
+
+#: processors/address/class-address-processor.php:66
+msgid "Add CiviCRM address to contacts"
+msgstr ""
+
+#: processors/case/case_config.php:29
+msgid "Do not create Case if the contact already has a Case of same type."
+msgstr ""
+
+#: processors/case/case_config.php:49
+msgid "Case"
+msgstr ""
+
+#: processors/case/case_config.php:51
+msgid "Case Type"
+msgstr ""
+
+#: processors/case/case_config.php:63
+msgid "Case Status"
+msgstr ""
+
+#: processors/case/case_config.php:75
+msgid "Case fields"
+msgstr ""
+
+#: processors/case/case_config.php:89
+msgid "Case Created By"
+msgstr ""
+
+#: processors/case/case_config.php:98
+msgid "Case Manager"
+msgstr ""
+
+#: processors/case/class-case-processor.php:64
+msgid "CiviCRM Case"
+msgstr ""
+
+#: processors/case/class-case-processor.php:65
+msgid "Add/Open CiviCRM Case (CiviCase) to contact"
+msgstr ""
+
+#: processors/contact/class-contact-processor.php:82
+msgid "CiviCRM Contact"
+msgstr ""
+
+#: processors/contact/class-contact-processor.php:83
+msgid "Create CiviCRM contact"
+msgstr ""
+
+#: processors/contact/contact_config.php:4
+msgid "Auto populate contact data with CiviCRM data if user is logged in."
+msgstr ""
+
+#: processors/contact/contact_config.php:6
+msgid ""
+"For related Contacts (relationship based contacts) add another Contact "
+"Processor (you can add more than one) plus a Relationship Processor, and use "
+"the Contact 1 as the A or B relationship. Do not forget to enable this "
+"option for the related Contacts (Contact Processor 1, 2, 3, etc.)."
+msgstr ""
+
+#: processors/contact/contact_config.php:10
+msgid "Process address for this contact."
+msgstr ""
+
+#: processors/contact/contact_config.php:15
+msgid "Process phone for this contact."
+msgstr ""
+
+#: processors/contact/contact_config.php:20
+msgid "Process note for this contact."
+msgstr ""
+
+#: processors/contact/contact_config.php:25
+msgid "Process email for this contact."
+msgstr ""
+
+#: processors/contact/contact_config.php:30
+msgid "Process website for this contact."
+msgstr ""
+
+#: processors/contact/contact_config.php:35
+msgid "Process Im for this contact."
+msgstr ""
+
+#: processors/contact/contact_config.php:40
+msgid "Process group for this contact."
+msgstr ""
+
+#: processors/contact/contact_config.php:45
+msgid "Process tag for this contact."
+msgstr ""
+
+#: processors/contact/contact_config.php:101
+msgid "Contact Sub-Type"
+msgstr ""
+
+#: processors/contact/contact_config.php:114
+msgid "Dedupe Rule"
+msgstr ""
+
+#: processors/contact/contact_config.php:128
+msgid "Contact Standard Fields"
+msgstr ""
+
+#: processors/contact/contact_config.php:130
+msgid "Standard Fields"
+msgstr ""
+
+#: processors/contact/contact_config.php:164
+msgid "Contact Custom Fields"
+msgstr ""
+
+#: processors/contact/contact_config.php:197
+msgid "Contact Address"
+msgstr ""
+
+#: processors/contact/contact_config.php:233
+msgid "Address Custom Fields"
+msgstr ""
+
+#: processors/contact/contact_config.php:268
+msgid "Contact Phone"
+msgstr ""
+
+#: processors/contact/contact_config.php:272
+#: processors/phone/phone_config.php:33
 msgid "Phone Location Type"
 msgstr ""
 
-#: processors/phone_config.php:40
+#: processors/contact/contact_config.php:284
+#: processors/phone/phone_config.php:46
+msgid "Phone Type"
+msgstr ""
+
+#: processors/contact/contact_config.php:296
+#: processors/phone/phone_config.php:59
 msgid "Phone Fields"
 msgstr ""
 
-#: processors/relationship_config.php:10
+#: processors/contact/contact_config.php:320
+msgid "Contact Note"
+msgstr ""
+
+#: processors/contact/contact_config.php:322 processors/note/note_config.php:22
+msgid "Note Fields"
+msgstr ""
+
+#: processors/contact/contact_config.php:353
+#: processors/contact/contact_config.php:355
+msgid "Email Location Type"
+msgstr ""
+
+#: processors/contact/contact_config.php:367
+msgid "Email Fields"
+msgstr ""
+
+#: processors/contact/contact_config.php:397
+msgid "Contact Website"
+msgstr ""
+
+#: processors/contact/contact_config.php:399
+#: processors/contact/contact_config.php:401
+#: processors/website/website_config.php:24
+#: processors/website/website_config.php:26
+msgid "Website Type"
+msgstr ""
+
+#: processors/contact/contact_config.php:413
+#: processors/website/website_config.php:37
+msgid "Website Fields"
+msgstr ""
+
+#: processors/contact/contact_config.php:444
+msgid "Contact Im"
+msgstr ""
+
+#: processors/contact/contact_config.php:446
+#: processors/contact/contact_config.php:448
+msgid "Im Location Type"
+msgstr ""
+
+#: processors/contact/contact_config.php:460 processors/im/im_config.php:37
+msgid "Im Fields"
+msgstr ""
+
+#: processors/contact/contact_config.php:487
+msgid "Contact Group"
+msgstr ""
+
+#: processors/contact/contact_config.php:489
+msgid "Group Fields"
+msgstr ""
+
+#: processors/contact/contact_config.php:515
+msgid "Contact Tag"
+msgstr ""
+
+#: processors/contact/contact_config.php:517
+#: processors/entity-tag/entity_tag_config.php:22
+msgid "Tag(s)"
+msgstr ""
+
+#: processors/contribution/class-contribution-processor.php:62
+#: processors/line-item/line_item_config.php:6
+msgid "CiviCRM Contribution"
+msgstr ""
+
+#: processors/contribution/class-contribution-processor.php:63
+msgid "Add CiviCRM contribution to contact"
+msgstr ""
+
+#: processors/contribution/contribution_config.php:34
+msgid "Contribution Fields"
+msgstr ""
+
+#: processors/dummy/class-dummy-processor.php:51
+msgid "Processor Name"
+msgstr ""
+
+#: processors/dummy/class-dummy-processor.php:54
+msgid "Processor Description"
+msgstr ""
+
+#: processors/dummy/dummy_config.php:36
+msgid "My Config Input"
+msgstr ""
+
+#: processors/dummy/dummy_config.php:39
+msgid "This field is magic tag enabled and required"
+msgstr ""
+
+#: processors/dummy/dummy_config.php:44
+msgid "My Bound Input"
+msgstr ""
+
+#: processors/dummy/dummy_config.php:47
+msgid "This field is a field bound input and is set as required"
+msgstr ""
+
+#: processors/dummy/dummy_config.php:52
+msgid "My Optional Input"
+msgstr ""
+
+#: processors/dummy/dummy_config.php:55
+msgid "This field is a field not required"
+msgstr ""
+
+#: processors/dummy/dummy_config.php:60
+msgid "My Optional Email"
+msgstr ""
+
+#: processors/dummy/dummy_config.php:63
+msgid ""
+"This is a bound field and is not required and bound to \"email\" field types "
+"only"
+msgstr ""
+
+#: processors/email/class-email-processor.php:73
+msgid "CiviCRM Email"
+msgstr ""
+
+#: processors/email/class-email-processor.php:74
+msgid "Add CiviCRM email to contacts"
+msgstr ""
+
+#: processors/entity-tag/class-entity-tag-processor.php:62
+msgid "CiviCRM Tag"
+msgstr ""
+
+#: processors/entity-tag/class-entity-tag-processor.php:63
+msgid "Add CiviCRM tags to contacts"
+msgstr ""
+
+#: processors/group/class-group-processor.php:62
+msgid "CiviCRM Group"
+msgstr ""
+
+#: processors/group/class-group-processor.php:63
+msgid "Add CiviCRM contact to group"
+msgstr ""
+
+#: processors/group/group_config.php:38
+msgid "Enable double opt-in?"
+msgstr ""
+
+#: processors/im/class-im-processor.php:73
+msgid "CiviCRM Im (Instant Messenger)"
+msgstr ""
+
+#: processors/im/class-im-processor.php:74
+msgid "Add CiviCRM Im to contacts"
+msgstr ""
+
+#: processors/im/im_config.php:24 processors/im/im_config.php:26
+msgid "Location Type"
+msgstr ""
+
+#: processors/line-item/class-line-item-processor.php:57
+msgid "CiviCRM Line Item"
+msgstr ""
+
+#: processors/line-item/class-line-item-processor.php:58
+msgid "Add Line Item for the Order Processor"
+msgstr ""
+
+#: processors/line-item/line_item_config.php:4
+#: processors/participant/class-participant-processor.php:110
+msgid "CiviCRM Participant"
+msgstr ""
+
+#: processors/line-item/line_item_config.php:5
+#: processors/membership/class-membership-processor.php:83
+msgid "CiviCRM Membership"
+msgstr ""
+
+#: processors/line-item/line_item_config.php:26
+msgid "Entity Table"
+msgstr ""
+
+#: processors/line-item/line_item_config.php:37
+msgid "Entity Data (Membership or Participant)"
+msgstr ""
+
+#: processors/line-item/line_item_config.php:40
+msgid ""
+"Required when the 'Entity Table' setting is set to CiviCRM Participant or "
+"CiviCRM Membership, optional for CiviCRM Contribution.<br>When 'Entity "
+"Table' is set to CiviCRM Contribution, set the Participant processor magic "
+"tag if this is a Contribution Line Item associated to a particular "
+"Participant, like for example a Donation."
+msgstr ""
+
+#: processors/line-item/line_item_config.php:46
+#: processors/membership/membership_config.php:88
+msgid "Price Field Value"
+msgstr ""
+
+#: processors/line-item/line_item_config.php:51
+msgid "Use a fixed Price Field Option"
+msgstr ""
+
+#: processors/line-item/line_item_config.php:56
+msgid "Select a Price Field"
+msgstr ""
+
+#: processors/line-item/line_item_config.php:70
+msgid "No price sets."
+msgstr ""
+
+#: processors/line-item/line_item_config.php:77
+msgid "Quantity"
+msgstr ""
+
+#: processors/line-item/line_item_config.php:86
+msgid "Use quantity as participant head count"
+msgstr ""
+
+#: processors/line-item/line_item_config.php:94
+msgid "Is Other Amount. (check this field to enable Other Amount)"
+msgstr ""
+
+#: processors/line-item/line_item_config.php:100
+msgid "Other Amount"
+msgstr ""
+
+#: processors/line-item/line_item_config.php:103
+msgid "Use this field for Other Amount"
+msgstr ""
+
+#: processors/membership/class-membership-processor.php:84
+msgid "Create/Renew CiviCRM Memberhips."
+msgstr ""
+
+#: processors/membership/class-membership-processor.php:391
+msgid "Your <strong>%1$s</strong> membership expires on %2$s."
+msgstr ""
+
+#: processors/membership/membership_config.php:34
+msgid "Is a paid for membership."
+msgstr ""
+
+#: processors/membership/membership_config.php:40
+msgid ""
+"Extend/renew this membership if the Contact has a membership of the same "
+"type."
+msgstr ""
+
+#: processors/membership/membership_config.php:46
+msgid ""
+"Preserve membership join date (Member since) for any oldest membership "
+"belonging to Organization."
+msgstr ""
+
+#: processors/membership/membership_config.php:49
+msgid "Organization"
+msgstr ""
+
+#: processors/membership/membership_config.php:56
+msgid "Membership type based."
+msgstr ""
+
+#: processors/membership/membership_config.php:75
+msgid "Membership Type"
+msgstr ""
+
+#: processors/membership/membership_config.php:78
+msgid "Select a Membership"
+msgstr ""
+
+#: processors/membership/membership_config.php:85
+msgid "Use Price Field based Membership Type."
+msgstr ""
+
+#: processors/membership/membership_config.php:111
+msgid "Membership Fields"
+msgstr ""
+
+#: processors/note/class-note-processor.php:62
+msgid "CiviCRM Note"
+msgstr ""
+
+#: processors/note/class-note-processor.php:63
+msgid "Add CiviCRM note to contacts"
+msgstr ""
+
+#: processors/note/note_config.php:34
+msgid "Attachment"
+msgstr ""
+
+#: processors/order/class-order-processor.php:104
+msgid "CiviCRM Order"
+msgstr ""
+
+#: processors/order/class-order-processor.php:105
+msgid ""
+"Add CiviCRM Order (Contribution with multiple Line Items, ie Events "
+"registrations, Donations, Memberships, etc.)"
+msgstr ""
+
+#: processors/order/order_config.php:17
+msgid "Default Status (Pending)"
+msgstr ""
+
+#: processors/order/order_config.php:51
+msgid ""
+"<strong>Note:</strong> This processor does not process payment transactions "
+"on it's own, it just creates a Contribution in CiviCRM with single or "
+"multiple line items. In order to process live payment transaction, a Caldera "
+"Forms <a href=\"https://calderaforms.com/caldera-forms-add-ons/#/payment\" "
+"target=\"_blank\">add-on</a> is needed. Currently this processor intergrates "
+"with Caldera Forms' Stripe and Authorize.net add-ons for <strong>single/one-"
+"off</strong> payments."
+msgstr ""
+
+#: processors/order/order_config.php:57 processors/order/order_config.php:88
+#: processors/participant/config.php:51
+msgid "Email receipt."
+msgstr ""
+
+#: processors/order/order_config.php:61
+msgid ""
+"Reciepts are generated from CiviCRM. CiviCRM relies on the Contribution page "
+"and Payment processor (among other entities) to <strong>fill</strong> the "
+"data in the receipt, those settings are optional, but please set those if "
+"you want <em>better</em> reciepts."
+msgstr ""
+
+#: processors/order/order_config.php:62
+msgid "Contribution Page"
+msgstr ""
+
+#: processors/order/order_config.php:73
+msgid "Payment Processor"
+msgstr ""
+
+#: processors/order/order_config.php:89
+msgid "Display Thank you template after submission."
+msgstr ""
+
+#: processors/order/order_config.php:106
+msgid "Order Fields"
+msgstr ""
+
+#: processors/order/order_config.php:109
+msgid "Financial Type"
+msgstr ""
+
+#: processors/order/order_config.php:134
+msgid "Contribution Status"
+msgstr ""
+
+#: processors/order/order_config.php:146
+msgid "Payment Method"
+msgstr ""
+
+#: processors/order/order_config.php:155
+msgid "Use Payment Method mapped field."
+msgstr ""
+
+#: processors/order/order_config.php:164
+msgid "Is Pay Later"
+msgstr ""
+
+#: processors/order/order_config.php:174
+msgid "Select a Payment Method considered as Pending (Pay later)."
+msgstr ""
+
+#: processors/order/order_config.php:180
+msgid "Transaction ID"
+msgstr ""
+
+#: processors/order/order_config.php:188
+msgid "Currency"
+msgstr ""
+
+#: processors/order/order_config.php:200
+msgid "Check Number"
+msgstr ""
+
+#: processors/order/order_config.php:216
+msgid "Total Amount"
+msgstr ""
+
+#: processors/order/order_config.php:225
+msgid "Line Items"
+msgstr ""
+
+#: processors/order/order_config.php:238
+msgid "Add Line Item"
+msgstr ""
+
+#: processors/order/order_config.php:245 processors/order/order_config.php:254
+#: processors/order/order_config.php:371
+msgid "Line Item"
+msgstr ""
+
+#: processors/participant/class-participant-processor.php:111
+msgid "Add CiviCRM Participant to event (for Event registration)."
+msgstr ""
+
+#: processors/participant/class-participant-processor.php:649
+msgid "(Sold out!)"
+msgstr ""
+
+#: processors/participant/class-participant-processor.php:764
+msgid ""
+"Oops. It looks like you are already registered for the event <strong>%1$s</"
+"strong>. If you want to change your registration, or you think that this is "
+"an error, please contact the site administrator."
+msgstr ""
+
+#: processors/participant/class-participant-processor.php:778
+msgid "Registration for the event <strong>%s</strong> is not yet opened."
+msgstr ""
+
+#: processors/participant/class-participant-processor.php:792
+msgid "Registration for the event <strong>%1$s</strong> was closed on %2$s."
+msgstr ""
+
+#: processors/participant/class-participant-processor.php:806
+#: processors/participant/class-participant-processor.php:820
+#: processors/participant/class-participant-processor.php:834
+msgid "%s"
+msgstr ""
+
+#: processors/participant/config.php:45
+msgid "Is a paid for event."
+msgstr ""
+
+#: processors/participant/config.php:58
+msgid ""
+"Disable form's fields options if the contact is registered for this event."
+msgstr ""
+
+#: processors/participant/config.php:61
+msgid ""
+"When a participant is registered for the event linked to this Participant "
+"processor, a notice will be displayed informing the user that they already "
+"registered. By checking this setting we will disable all other fields and "
+"field options as well. This is particularly useful when offering multiple "
+"events on a single form, and if one is registered for the event linked to "
+"this processor, you want to disable not only registering for this event but "
+"for any other events or options on the form.  This is typically done when "
+"one event is considered as <em>main event</em>."
+msgstr ""
+
+#: processors/participant/config.php:79
+msgid "Event"
+msgstr ""
+
+#: processors/participant/config.php:82
+msgid "Select an Event"
+msgstr ""
+
+#: processors/participant/config.php:92
+msgid "Participant Role"
+msgstr ""
+
+#: processors/participant/config.php:95
+msgid "Event Default Role"
+msgstr ""
+
+#: processors/participant/config.php:105
+msgid "Participant Status"
+msgstr ""
+
+#: processors/participant/config.php:108
+msgid "Event Default Status"
+msgstr ""
+
+#: processors/participant/config.php:131
+msgid "Participant Fields"
+msgstr ""
+
+#: processors/phone/class-phone-processor.php:73
+msgid "CiviCRM Phone"
+msgstr ""
+
+#: processors/phone/class-phone-processor.php:74
+msgid "Add CiviCRM phone to contacts"
+msgstr ""
+
+#: processors/relationship/class-relationship-processor.php:51
+msgid "CiviCRM Relationship"
+msgstr ""
+
+#: processors/relationship/class-relationship-processor.php:52
+msgid "Add CiviCRM relationship to contacts"
+msgstr ""
+
+#: processors/relationship/relationship_config.php:16
 msgid "Relationship Type"
 msgstr ""
 
-#: processors/relationship_config.php:21
+#: processors/relationship/relationship_config.php:29
+msgid "Use Relationship Type mapped field."
+msgstr ""
+
+#: processors/relationship/relationship_config.php:38
 msgid "Contact A"
 msgstr ""
 
-#: processors/relationship_config.php:39
+#: processors/relationship/relationship_config.php:56
 msgid "Contact B"
 msgstr ""
+
+#: processors/relationship/relationship_config.php:75
+msgid "Relationship Fields"
+msgstr ""
+
+#: processors/send-email/class-send-email-processor.php:61
+msgid "CiviCRM Send Email"
+msgstr ""
+
+#: processors/send-email/class-send-email-processor.php:62
+msgid "Send Email from CiviCRM (CiviCRM message templates, requires Email API)"
+msgstr ""
+
+#: processors/send-email/send_email_config.php:25
+msgid "Message Template"
+msgstr ""
+
+#: processors/send-email/send_email_config.php:35
+msgid ""
+"From Name, From Email, and Alterantive Email Receiver fields are optional."
+msgstr ""
+
+#: processors/send-email/send_email_config.php:38
+msgid "From Name"
+msgstr ""
+
+#: processors/send-email/send_email_config.php:45
+msgid "From Email"
+msgstr ""
+
+#: processors/send-email/send_email_config.php:52
+msgid "Alternative Email Receiver"
+msgstr ""
+
+#: processors/website/class-website-processor.php:73
+msgid "CiviCRM Website"
+msgstr ""
+
+#: processors/website/class-website-processor.php:74
+msgid "Add CiviCRM website to contacts"
+msgstr ""
+
 #. Plugin Name of the plugin/theme
-msgid "Caldera Forms CiviCRM"
+msgid "CF CiviCRM"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
