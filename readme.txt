@@ -36,7 +36,8 @@ Note: this plugin is no longer in active development. For urgent bug reports (or
 == Changelog ==
 
 = 1.1.0 =
-Fix for failed Orders in CiviCRM 5.41.0+
+* Fix for failed Orders in CiviCRM 5.41.0+
+* Apply dev branch fixes and enhancements
 
 = 1.0.5 =
 * Refactored CiviDiscount integration to also support Membership discounts, and Contribution Page based (contribution) discount using this branch (pending, submit PR upstream) https://github.com/mecachisenros/org.civicrm.module.cividiscount/tree/contribution-page-discounts
