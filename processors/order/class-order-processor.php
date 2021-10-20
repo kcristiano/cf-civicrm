@@ -486,8 +486,8 @@ class CiviCRM_Caldera_Forms_Order_Processor {
 				$this->transition_participants_for_order( $participant_statuses, $order );
 			}
 
-			// completed contribution, ensure memberships have correct status
-			if ( $contribution && ! empty( $membership_entities ) ) {
+			// Completed Contribution, ensure Memberships have correct status in CiviCRM 5.41.0+.
+			if ( $contribution && ! empty( $membership_entities ) && version_compare( $version, '5.41.0', '>=' ) ) {
 				$this->transition_memberships_for_order( $membership_entities, $order );
 			}
 
