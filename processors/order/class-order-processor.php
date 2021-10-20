@@ -203,7 +203,7 @@ class CiviCRM_Caldera_Forms_Order_Processor {
 			// create product
 			$this->create_premium( $this->order, $form_values, $config );
 
-			// save orde data in transient
+			// save order data in transient
 			$transient->orders->{$config['processor_id']}->params = $this->order;
 			$this->plugin->transient->save( $transient->ID, $transient );
 
@@ -347,7 +347,13 @@ class CiviCRM_Caldera_Forms_Order_Processor {
 
 		// get all entities
 		$entities = array_column( $current_order['line_items'], 'entity_table', 'entity_id' );
-		// get participant entites
+
+		// Get membership entities
+		$membership_entities = array_filter( $entities, function( $entity ) {
+			return $entity == 'civicrm_membership';
+		} );
+
+		// get participant entities
 		$participant_entities = array_filter( $entities, function( $entity ) {
 			return $entity == 'civicrm_participant';
 		} );
@@ -456,10 +462,10 @@ class CiviCRM_Caldera_Forms_Order_Processor {
 
 		if ( $current_order['contribution_status'] == 'Pending' ) {
 
-			// complete payment
+			// complete payment by updating the Order
 			try {
-				// $payment = civicrm_api3( 'Payment', 'create', $payment_params );
-				$order_params= [
+
+				$order_params = [
 					'id' => $update_order['id'],
 					'contact_id' => $update_order['contact_id'],
 					'contribution_id' => $update_order['id'],
@@ -477,9 +483,12 @@ class CiviCRM_Caldera_Forms_Order_Processor {
 
 			// completed contribution, ensure participant have Registered status
 			if ( $contribution && ! empty( $participant_statuses ) ) {
-
 				$this->transition_participants_for_order( $participant_statuses, $order );
+			}
 
+			// completed contribution, ensure memberships have correct status
+			if ( $contribution && ! empty( $membership_entities ) ) {
+				$this->transition_memberships_for_order( $membership_entities, $order );
 			}
 
 		}
@@ -511,7 +520,7 @@ class CiviCRM_Caldera_Forms_Order_Processor {
 	}
 
 	/**
-	 * Transition pariticiapnt status to 'Registered'.
+	 * Transition participant status to 'Registered'.
 	 *
 	 * @param array $participant_statuses [participant_id => participant_status_id]
 	 * @param array $order The order
@@ -538,6 +547,53 @@ class CiviCRM_Caldera_Forms_Order_Processor {
 			array_keys( $participant_statuses ),
 			$participant_statuses
 		);
+	}
+
+	/**
+	 * Transition membership status to 'Registered'.
+	 *
+	 * @param array $membership_statuses [membership_id => membership_status_id]
+	 * @param array $order The order
+	 */
+	public function transition_memberships_for_order( $membership_entities, $order ) {
+
+		if ( empty( $membership_entities ) ) {
+			return;
+		}
+
+		foreach ( $membership_entities as $id => $membership_entity ) {
+
+			try {
+				$pending_membership = civicrm_api3( 'Membership', 'get', [ 'id' => $id ] );
+			} catch ( CiviCRM_API3_Exception $e ) {
+				$pending_membership = null;
+			}
+
+			if ( is_null( $pending_membership ) ) {
+				continue;
+			}
+
+			try {
+				$membership_status = civicrm_api3( 'MembershipStatus', 'calc', [ 'membership_id' => $id ] );
+			} catch ( CiviCRM_API3_Exception $e ) {
+				$membership_status = null;
+			}
+
+			if ( is_null( $membership_status ) ) {
+				continue;
+			}
+
+			$params = [
+				'id' => $id,
+				'membership_type_id' => $pending_membership['membership_type_id'],
+				'contact_id' => $pending_membership['contact_id'],
+				'status_id' => $membership_status['id'],
+			];
+
+			$result = civicrm_api3( 'Membership', 'create', $params );
+
+		}
+
 	}
 
 	/**
@@ -746,7 +802,7 @@ class CiviCRM_Caldera_Forms_Order_Processor {
 							);
 					}
 
-					if ( $latest_membership && date( 'Y-m-d', strtotime( $oldest_membership['join_date'] ) ) < date( 'Y-m-d', strtotime( $latest_membership['join_date'] ) ) ) {
+					if ( ! empty( $latest_membership ) && ! empty( $oldest_membership ) && date( 'Y-m-d', strtotime( $oldest_membership['join_date'] ) ) < date( 'Y-m-d', strtotime( $latest_membership['join_date'] ) ) ) {
 						// is latest/current membership one of associated?
 						if ( $associated_memberships && in_array( $latest_membership['membership_type_id'], $associated_memberships ) ) {
 							// set oldest join date
