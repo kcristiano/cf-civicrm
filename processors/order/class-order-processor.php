@@ -550,9 +550,9 @@ class CiviCRM_Caldera_Forms_Order_Processor {
 	}
 
 	/**
-	 * Transition membership status to 'Registered'.
+	 * Transition Membership Status to correct "New" status.
 	 *
-	 * @param array $membership_statuses [membership_id => membership_status_id]
+	 * @param array $membership_entities [membership_id => entity]
 	 * @param array $order The order
 	 */
 	public function transition_memberships_for_order( $membership_entities, $order ) {
