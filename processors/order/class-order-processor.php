@@ -785,30 +785,34 @@ class CiviCRM_Caldera_Forms_Order_Processor {
 						// is pay later, filter membership status to pending
 						add_filter( 'cfc_current_membership_get_status', [ $this, 'set_pending_status' ], 10 );
 						// get latest membership
-						if ( $oldest_membership )
+						if ( $oldest_membership ) {
 							$latest_membership = $this->plugin->helper->get_membership(
 								$transient->contacts->{$this->contact_link},
 								$transient->memberships->$id->params['membership_type_id']
 							);
+						}
 						// remove filter
 						remove_filter( 'cfc_current_membership_get_status', [ $this, 'set_pending_status' ], 10 );
 					} else {
-						if ( $oldest_membership )
+						if ( $oldest_membership ) {
 							$latest_membership = $this->plugin->helper->get_membership(
 								$transient->contacts->{$this->contact_link},
 								$transient->memberships->$id->params['membership_type_id'],
 								$sort = 'DESC',
 								$skip_status = true
 							);
+						}
 					}
 
-					if ( ! empty( $latest_membership ) && ! empty( $oldest_membership ) && date( 'Y-m-d', strtotime( $oldest_membership['join_date'] ) ) < date( 'Y-m-d', strtotime( $latest_membership['join_date'] ) ) ) {
-						// is latest/current membership one of associated?
-						if ( $associated_memberships && in_array( $latest_membership['membership_type_id'], $associated_memberships ) ) {
-							// set oldest join date
-							$latest_membership['join_date'] = $oldest_membership['join_date'];
-							// update membership
-							$update_membership = civicrm_api3( 'Membership', 'create', $latest_membership );
+					if ( ! empty( $oldest_membership ) && ! empty( $latest_membership ) ) {
+						if( date( 'Y-m-d', strtotime( $oldest_membership['join_date'] ) ) < date( 'Y-m-d', strtotime( $latest_membership['join_date'] ) ) ) {
+							// is latest/current membership one of associated?
+							if ( $associated_memberships && in_array( $latest_membership['membership_type_id'], $associated_memberships ) ) {
+								// set oldest join date
+								$latest_membership['join_date'] = $oldest_membership['join_date'];
+								// update membership
+								$update_membership = civicrm_api3( 'Membership', 'create', $latest_membership );
+							}
 						}
 					}
 
