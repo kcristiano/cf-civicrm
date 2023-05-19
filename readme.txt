@@ -1,9 +1,9 @@
 === Caldera Forms CiviCRM ===
 Contributors: mecachisenros, needle
 Tags: civicrm, caldera, forms, integration
-Requires at least: 4.7
-Tested up to: 5.7
-Stable tag: 1.1
+Requires at least: 5.5
+Tested up to: 5.9
+Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -34,6 +34,9 @@ Note: this plugin is no longer in active development. For urgent bug reports (or
 
 
 == Changelog ==
+
+= 1.1.1 =
+* Fix for Dedupe in CiviCRM 5.62.0+
 
 = 1.1.0 =
 * Fix for failed Orders in CiviCRM 5.41.0+
