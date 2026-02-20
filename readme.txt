@@ -1,9 +1,9 @@
 === Caldera Forms CiviCRM ===
 Contributors: mecachisenros, needle
 Tags: civicrm, caldera, forms, integration
-Requires at least: 4.7
-Tested up to: 5.7
-Stable tag: 1.1
+Requires at least: 6.9
+Tested up to: 6.9
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
